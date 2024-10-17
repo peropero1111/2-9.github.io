@@ -20,9 +20,9 @@
             border-radius: 10px;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 800px; 
+            max-width: 800px;
             box-sizing: border-box;
-            overflow-x: auto; 
+            overflow-x: auto;
         }
         h1 {
             font-size: 24px;
@@ -32,14 +32,113 @@
             margin: 10px;
             padding: 10px 20px;
         }
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            display: flex; /* 추가 */
+            justify-content: center; /* 테이블을 가운데로 정렬 */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px; /* 테이블 크기 제한 */
+            margin: 20px 0;
+            border: 1px solid pink;
+            border-width: 2px;
+        }
+        th, td {
+            border: 1px solid pink;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.9em;
+            border-width: 2px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 0.8em;
+                padding: 6px;
+            }
+        }
     </style>
 </head>
-    <div class="container">
 <body>
-    <h1>2학년 9반에 온것을 환영합니다 '익명의 여행자'님!</h1>
-    <hr></hr>
-    <button onclick="window.location.href='https://foodchecking.netlify.app/'">급식보기</button>
-    <button onclick="window.location.href='https://2-9schedule.netlify.app/'">시간표 보기</button>
-</body>
+    <div class="container">
+        <h1>2학년 9반에 온것을 환영합니다 '익명의 여행자'님!</h1>
+        <h1>2학년 9반의 시간표 입니다</h1>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">월요일</th>
+                    <th scope="col">화요일</th>
+                    <th scope="col">수요일</th>
+                    <th scope="col">목요일</th>
+                    <th scope="col">금요일</th>
+                </tr>
+                <tr>
+                    <td>1교시</td>
+                    <td>공강</td>
+                    <td>한국사</td>
+                    <td>A</td>
+                    <td>D</td>
+                    <td>영어II</td>
+                </tr>
+                <tr>
+                    <td>2교시</td>
+                    <td>문학</td>
+                    <td>A</td>
+                    <td>영어II</td>
+                    <td>문학</td>
+                    <td>문학</td>
+                </tr>
+                <tr>
+                    <td>3교시</td>
+                    <td>미적분</td>
+                    <td>음악</td>
+                    <td>체육</td>
+                    <td>진로</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>4교시</td>
+                    <td>C</td>
+                    <td>영어II</td>
+                    <td>D</td>
+                    <td>A</td>
+                    <td>한국사</td>
+                </tr>
+                <tr>
+                    <td>5교시</td>
+                    <td>체육</td>
+                    <td>C</td>
+                    <td>문학</td>
+                    <td>영어II</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>6교시</td>
+                    <td>D</td>
+                    <td>B</td>
+                    <td>창체</td>
+                    <td>공강</td>
+                    <td>공강</td>
+                </tr>
+                <tr>
+                    <td>7교시</td>
+                    <td>B</td>
+                    <td>미적분</td>
+                    <td>창체</td>
+                    <td>미술</td>
+                    <td>미적분</td>
+                </tr>
+            </table>
+            </tbody></table>
+        </div>
+            <h4>후원 하여 개발에 도움주기/ 토스뱅크1001-4732-6642</h4>
     </div>
+</body>
 </html>
+
